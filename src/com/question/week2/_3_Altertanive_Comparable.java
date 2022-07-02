@@ -2,7 +2,7 @@ package com.question.week2;
 
 import java.util.Arrays;
 
-public class _3_Comparable {
+public class _3_Altertanive_Comparable {
 	public static void main(String[] args) {
 
 		String order = "abcçdefgĞhıijklmnoöprsştuvyz";
