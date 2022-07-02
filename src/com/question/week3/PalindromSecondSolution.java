@@ -17,13 +17,13 @@ public class PalindromSecondSolution {
 				System.out.print("Kontrol etmek istediğiniz bir tamsayı değeri degeri giriniz : ");
 				String number = scanner.nextLine();
 
-				int palindromChech = Integer.parseInt(palindromeTamamlayiciSayi(number));
-				if (palindromChech == 0) {
+				int palindromCheckResult = Integer.parseInt(palindromeTamamlayiciSayi(number));
+				if (palindromCheckResult == 0) {
 					System.out.println("Girilen değer zaten palindromdur.");
 				} else {
-					System.out.println(palindromChech + " Eklemek gerekir.");
-					System.out.println(Integer.parseInt(number) + " + " + palindromChech + " = "
-							+ (Integer.parseInt(number) + palindromChech) + " Sayısı bir palindrom sayıdır");
+					System.out.println(palindromCheckResult + " Eklemek gerekir.");
+					System.out.println(Integer.parseInt(number) + " + " + palindromCheckResult + " = "
+							+ (Integer.parseInt(number) + palindromCheckResult) + " Sayısı bir palindrom sayıdır");
 				}
 
 			}
@@ -40,7 +40,7 @@ public class PalindromSecondSolution {
 
 		int r, sum = 0;
 		for (int i = 0;; i++) {
-			int n = temp;
+			int n = temp; // Sürekli olarak güncel geçici temp degişkeninin değerini alacak olan değişken
 			while (n > 0) {
 				r = n % 10; // getting remainder
 				sum = (sum * 10) + r;
