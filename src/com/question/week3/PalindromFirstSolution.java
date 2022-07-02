@@ -19,7 +19,8 @@ public class PalindromFirstSolution {
 			while (true) {
 				System.out.print("Kontrol etmek istediğiniz bir tamsayı değeri degeri giriniz : ");
 				String number = scanner.nextLine();
-				System.out.println(palindromeTamamlayiciSayi(number));
+				int palindromeCheckNumber = Integer.parseInt(palindromeTamamlayiciSayi(number));
+				System.out.println("*********" + palindromeCheckNumber + "*********");
 			}
 		}
 	}
@@ -38,10 +39,12 @@ public class PalindromFirstSolution {
 			}
 			int newNumber = Integer.parseInt(String.valueOf(cloneArr));
 			if (castNumber > newNumber) {
-				System.out.print("Bu sayı çıkarılmalı=>");
+				System.out.println("Bu sayı çıkarılmalı => " + (castNumber - newNumber));
+				System.out.println(castNumber + " - " + (castNumber - newNumber) + " = " + newNumber);
 				return String.valueOf(castNumber - newNumber);
 			} else {
-				System.out.print("Bu sayı eklenmeli=>");
+				System.out.println("Bu sayı eklenmeli => " + (newNumber - castNumber));
+				System.out.println(castNumber + " + " + (newNumber - castNumber) + " = " + newNumber);
 				return String.valueOf(newNumber - castNumber);
 			}
 

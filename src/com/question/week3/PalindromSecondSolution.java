@@ -20,38 +20,38 @@ public class PalindromSecondSolution {
 				int palindromChech = Integer.parseInt(palindromeTamamlayiciSayi(number));
 				if (palindromChech == 0) {
 					System.out.println("Girilen değer zaten palindromdur.");
-				} else
+				} else {
 					System.out.println(palindromChech + " Eklemek gerekir.");
+					System.out.println(Integer.parseInt(number) + " + " + palindromChech + " = "
+							+ (Integer.parseInt(number) + palindromChech) + " Sayısı bir palindrom sayıdır");
+				}
+
 			}
-		} catch (NumberFormatException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		} catch (Exception e) {
+			throw new PalindromException("Girilen değer bir tam sayı değildir.");
 		}
 
 	}
 
 	public static String palindromeTamamlayiciSayi(String sayi) throws PalindromException {
-		try {
-			int castNumber = Integer.parseInt(sayi);
-			int temp = castNumber;
 
-			int r, sum = 0;
-			for (int i = 0;; i++) {
-				int n = temp;
-				while (n > 0) {
-					r = n % 10; // getting remainder
-					sum = (sum * 10) + r;
-					n = n / 10;
-				}
-				if (temp == sum) {
-					return String.valueOf(i);
-				}
-				sum = 0;
-				temp++;
+		int castNumber = Integer.parseInt(sayi);
+		int temp = castNumber;
+
+		int r, sum = 0;
+		for (int i = 0;; i++) {
+			int n = temp;
+			while (n > 0) {
+				r = n % 10; // getting remainder
+				sum = (sum * 10) + r;
+				n = n / 10;
 			}
-
-		} catch (Exception e) {
-			throw new PalindromException("Girilen değer bir tam sayı değildir.");
+			if (temp == sum) {
+				return String.valueOf(i);
+			}
+			sum = 0;
+			temp++;
 		}
+
 	}
 }
