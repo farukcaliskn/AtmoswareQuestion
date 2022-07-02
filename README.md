@@ -1,4 +1,7 @@
 # AtmoswareQuestion
+
+Her haftaya ait soruların cevapları src klasöründe farklı package'lar içerisindedir.
+
 Soru-2
 
 	İki farklı çözüm mevcuttur.
