@@ -14,4 +14,4 @@ Soru-3
 
 	1. Ulaşmak istediğimiz palindrom sayı için şart sadece sayının palindrom olması ise en kolay bu şekilde ulaşabileceğimizi düşündüm. Çözüm sayıyı bir char dizisine atıyor ve daha sonra ortadan ikiye bölerek elemanları birbirine eşitliyor. Sonrasında aradaki olan farkı döndürüyor.Çözüm içerisinde istersek sayının büyük kısmını diğer tarafa benzeterek sadece her defasında eklenerek ulaşılacak olan sonucu bize döndürecektir. Diğer bir çözüm PalindromSecondSolution class'ın içerisindedir.(src/com/question/week3/PalindromFirstSolution.java) 
 	
-	2.Kendisinden sonra ilk gelen palindrom sayıyı bulur ve bizim girdiğimiz sayı ile arasında olan farkı döndürür. 3 basamaklı sayılar için pek bir performans kaybı olmaz fakat basamak sayısı büyüdükçe performans azalacağı için 1. çözümü kullanmak tercih sebebi olabilir.(src/com/question/week3/PalindromSecondSolution.java) 
+	2.Palindrome sayı. String sayı çıkarma hazır kullanılmıştır. (src/com/question/week3/Palindrome.java) 
