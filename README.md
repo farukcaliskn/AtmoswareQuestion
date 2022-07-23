@@ -15,3 +15,8 @@ Soru-3
 	1. Ulaşmak istediğimiz palindrom sayı için şart sadece sayının palindrom olması ise en kolay bu şekilde ulaşabileceğimizi düşündüm. Çözüm sayıyı bir char dizisine atıyor ve daha sonra ortadan ikiye bölerek elemanları birbirine eşitliyor. Sonrasında aradaki olan farkı döndürüyor.Çözüm içerisinde istersek sayının büyük kısmını diğer tarafa benzeterek sadece her defasında eklenerek ulaşılacak olan sonucu bize döndürecektir. Diğer bir çözüm PalindromSecondSolution class'ın içerisindedir.(src/com/question/week3/PalindromFirstSolution.java) 
 	
 	2.Palindrome sayı. String sayı çıkarma hazır kullanılmıştır. (src/com/question/week3/Palindrome.java) 
+
+Soru-4
+	
+	Dizideki altkümerlerin toplamları arasında girilen toplam değerini içerip içermediğini bulan algoritma.(src/com/question/week4/Main.java)
+	
